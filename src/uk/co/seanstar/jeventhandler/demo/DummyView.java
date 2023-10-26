@@ -10,9 +10,11 @@ public class DummyView {
     public DummyView() {
 
     }
-    public void test() {
-        saveEvt.invoke(new DummyObject("Test 123"));
-
+    public void testSave() {
+        saveEvt.invoke(new DummyObject("Save - Test 123"));
         disposedEvt.invoke(null);
+    }
+    public void testLoad() {
+        loadEvt.invoke("Load - Test 123");
     }
 }

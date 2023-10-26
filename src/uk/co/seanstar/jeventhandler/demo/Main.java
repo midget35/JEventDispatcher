@@ -12,7 +12,7 @@ public class Main {
         dummyView.saveEvt.addListener(this, this::onSave);
         dummyView.saveEvt.addListener(this, this::onSave2);
         dummyView.disposedEvt.addListener(this, this::onDisposed);
-        dummyView.test();
+        dummyView.testSave();
     }
 
     private void onDisposed(Void v) {
